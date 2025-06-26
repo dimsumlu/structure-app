@@ -7,9 +7,9 @@ from io import BytesIO
 
 st.set_page_config(page_title="结构效应分析工具", layout="centered")
 
-st.title("📊 结构效应与退费率效应分析工具")
-st.markdown("上传一份包含 **维度列 + 在班人数 + 退费人数** 的 CSV 文件，字段顺序需为：")
-st.markdown("**维度、基期在班人数、当期在班人数、基期退费人数、当期退费人数**")
+st.title("📊 量化归因效应分析工具")
+st.markdown("上传一份包含 **维度列 + 在班人数 + 指标人数** 的 CSV 文件，字段顺序需为：")
+st.markdown("**维度、基期在班人数、当期在班人数、基期xx人数、当期xx人数**")
 uploaded_file = st.file_uploader("📂 上传 CSV 文件", type=["csv"])
 
 if uploaded_file:
